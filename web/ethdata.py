@@ -13,6 +13,7 @@ _eth_price_regex = re.compile('[0-9]+\.[0-9]+')
 def get_eth_usd():
     return _get_eth_price('usd')
 
+
 # Returns latest price of ETH in GBP
 def get_eth_gbp():
     return _get_eth_price('gbp')
@@ -30,6 +31,3 @@ def _get_eth_price(currency):
             if _eth_line_regex.match(paragraph_line):
                 return _eth_price_regex.search(paragraph_line).group(0)
 
-
-print(get_eth_usd())
-print(get_eth_gbp())

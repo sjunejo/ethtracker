@@ -1,3 +1,4 @@
-Grabs latest ETH/USD and ETH/GBP data.
+# ETH Tracker
 
-Then forms a graph showing the changes in ETH/USD and ETH/GBP pairs over time (currently the last month).
+
+Monitor price of ETH over time, and create graphs based on price data for analysis
